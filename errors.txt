@@ -1,0 +1,25 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Can't connect to pigpio at localhost(8888)
+
+Did you start the pigpio daemon? E.g. sudo pigpiod
+
+Did you specify the correct Pi host/port in the environment
+variables PIGPIO_ADDR/PIGPIO_PORT?
+E.g. export PIGPIO_ADDR=soft, export PIGPIO_PORT=8888
+
+Did you specify the correct Pi host/port in the
+pigpio.pi() function? E.g. pigpio.pi('soft', 8888)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+Traceback (most recent call last):
+  File "/home/bobecar/VESC_Embedded_Linux/remote-control/pwm.py", line 12, in <module>
+    print("PWM:", read_pwm(channel_pin))
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bobecar/VESC_Embedded_Linux/remote-control/pwm.py", line 9, in read_pwm
+    pi.set_mode(pin, pigpio.INPUT)
+  File "/usr/lib/python3/dist-packages/pigpio.py", line 1376, in set_mode
+    return _u2i(_pigpio_command(self.sl, _PI_CMD_MODES, gpio, mode))
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3/dist-packages/pigpio.py", line 1025, in _pigpio_command
+    sl.s.send(struct.pack('IIII', cmd, p1, p2, 0))
+    ^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'send'

@@ -1,0 +1,3 @@
+/home/bobecar/VESC_Embedded_Linux/CMakeFiles/vesc_uart_app.dir
+/home/bobecar/VESC_Embedded_Linux/CMakeFiles/edit_cache.dir
+/home/bobecar/VESC_Embedded_Linux/CMakeFiles/rebuild_cache.dir
