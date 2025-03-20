@@ -1,4 +1,4 @@
-#Bob-E-Car
+# Bob-E-Car
 
 This is a project for serial communication between the VESC and Embedded Linux Devices, such as
 Beaglebone Black and Raspberry Pi. It will also work with any Linux Computer. The provided 
